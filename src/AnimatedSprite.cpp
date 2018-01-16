@@ -17,7 +17,7 @@ void AnimatedSprite::addAnimation(int frames, int x, int y, std::string name, in
                                   Vector2 offset) {
     std::vector<SDL_Rect> rectangles;
     for (int i = 0; i < frames; ++i) {
-        SDL_Rect newRect = {(i + x) * width, y, width, height};
+        SDL_Rect newRect = {i * width + x, y, width, height};
         rectangles.push_back(newRect);
     }
     this->_animations.insert(std::pair<std::string, std::vector<SDL_Rect>>(name, rectangles));
@@ -75,13 +75,4 @@ void AnimatedSprite::draw(Graphics &graphics, int x, int y) {
         SDL_Rect sourceRect = this->_animations[this->_currentAnimation][this->_frameIndex];
         graphics.blitSurface(this->_spriteSheet, &sourceRect, &destinationRectangle);
     }
-}
-
-void AnimatedSprite::animationDone(std::string currentAnimation) {
-
-}
-
-void AnimatedSprite::setupAnimations() {
-    this->addAnimation(3, 0, 0, "RunLeft", 16, 16, Vector2(0,0));
-    this->addAnimation(3, 0, 16, "RunRight", 16, 16, Vector2(0,0));
 }

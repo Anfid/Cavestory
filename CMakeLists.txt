@@ -3,7 +3,7 @@ project(Cavestory)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Cavestory main.cpp headers/Graphics.h src/Graphics.cpp headers/Game.h src/Game.cpp headers/Input.h src/Input.cpp headers/Sprite.h src/Sprite.cpp headers/globals.h headers/AnimatedSprite.h src/AnimatedSprite.cpp)
+add_executable(Cavestory main.cpp headers/Graphics.h src/Graphics.cpp headers/Game.h src/Game.cpp headers/Input.h src/Input.cpp headers/Sprite.h src/Sprite.cpp headers/globals.h headers/AnimatedSprite.h src/AnimatedSprite.cpp headers/Player.h src/Player.cpp headers/Level.h)
 
 INCLUDE(FindPkgConfig)
 

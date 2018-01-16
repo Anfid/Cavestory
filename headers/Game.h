@@ -1,7 +1,7 @@
 #ifndef CAVESTORY_GAME_H
 #define CAVESTORY_GAME_H
 
-#include "../headers/AnimatedSprite.h"
+#include "../headers/Player.h"
 
 class Graphics;
 
@@ -14,7 +14,7 @@ private:
     void draw(Graphics &graphics);
     void update(float elapsedTime);
 
-    AnimatedSprite _player;
+    Player _player;
 };
 
 #endif //CAVESTORY_GAME_H

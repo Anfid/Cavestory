@@ -6,7 +6,7 @@
 
 // Called at the beginning of each frame to reset no longer relevant keys
 void Input::beginNewFrame() {
-    this->_heldKeys.clear();
+    this->_pressedKeys.clear();
     this->_releasedKeys.clear();
 }
 
