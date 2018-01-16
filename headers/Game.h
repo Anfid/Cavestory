@@ -1,7 +1,8 @@
 #ifndef CAVESTORY_GAME_H
 #define CAVESTORY_GAME_H
 
-#include "../headers/Player.h"
+#include "Player.h"
+#include "Level.h"
 
 class Graphics;
 
@@ -15,6 +16,8 @@ private:
     void update(float elapsedTime);
 
     Player _player;
+
+    Level _level;
 };
 
 #endif //CAVESTORY_GAME_H

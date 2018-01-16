@@ -17,8 +17,8 @@ Player::Player(Graphics &graphics, float x, float y) :
 }
 
 void Player::setupAnimations() {
-    this->addAnimation(1, 16, 0, "IdleLeft", 16, 16, Vector2(0,0));
-    this->addAnimation(1, 16, 16, "IdleRight", 16, 16, Vector2(0,0));
+    this->addAnimation(1, 0, 0, "IdleLeft", 16, 16, Vector2(0,0));
+    this->addAnimation(1, 0, 16, "IdleRight", 16, 16, Vector2(0,0));
     this->addAnimation(3, 0, 0, "RunLeft", 16, 16, Vector2(0,0));
     this->addAnimation(3, 0, 16, "RunRight", 16, 16, Vector2(0,0));
 }
